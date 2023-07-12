@@ -1,4 +1,4 @@
-#!/usr/bin/python3def
+#!/bin/bash
 magic_calculation(a, b, c):
 if a < b:
     return c
