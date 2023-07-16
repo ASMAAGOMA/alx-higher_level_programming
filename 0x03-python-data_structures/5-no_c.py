@@ -7,4 +7,4 @@ def no_c(my_string):
             char_list.pop(i)
         else:
             i += 1
-        return (''.join(char_list))
+    return (''.join(char_list))
