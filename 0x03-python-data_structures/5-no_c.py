@@ -6,5 +6,5 @@ def no_c(my_string):
             char_list[i] = ''
         else:
             continue
-        new_string = ''.join(char_list)
-        return (new_string)
+        my_string = ''.join(char_list)
+        return (my_string)
