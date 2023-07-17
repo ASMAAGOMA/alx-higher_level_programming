@@ -40,7 +40,6 @@ int compare_lists(listint_t *list1, listint_t *list2)
 		list2 = list2->next;
 	}
 
-	/* If one list is shorter than the other, they are not equal */
 	if (list1 != NULL || list2 != NULL)
 		return (0);
 
