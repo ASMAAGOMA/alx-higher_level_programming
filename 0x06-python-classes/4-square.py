@@ -16,7 +16,7 @@ class Square:
         size (int): The size of the new square.
 
         """
-        self.size = size
+        self.__size = size
 
     @property
     def size(self):
@@ -36,4 +36,4 @@ class Square:
         def area(self):
 
             """Return the current area of the square."""
-            return (self.size * self.size)
+            return (self.__size ** 2)
