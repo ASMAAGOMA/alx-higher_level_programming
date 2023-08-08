@@ -60,11 +60,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
 
-        rec = ""
-        for i in range(self.__height):
-            rec += "#" * self.__width
-            rec += '\n'
-        return rec[:-1]
+        return "\n".join([str(self.print_symbol) * self.__width] * self.__height)
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
@@ -72,3 +68,7 @@ class Rectangle:
     def __del__(self):
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+
+    @classmethod
+    def set_symbol(cls, symbol):
+        cls.print_symbol = symbol
