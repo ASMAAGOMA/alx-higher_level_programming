@@ -1,22 +1,39 @@
-#0-add_integer.py
+# 0-add_integer.txt
 
-===============================
-How to use 0-add_integer.py
-===============================
 
-This module defines an integer addition function "def add_integer(a, b=98)"
+===========================
+
+How to Use 0-add_integer.py
+
+===========================
+
+
+This module defines an integer addition function ``add_integer(a, b=98)``.
+
 
 Usage
+
 =====
 
-"add_integer(...)"'returns the addition of its two nums
+
+``add_integer(...)` returns the addition of its two arguments. For numbers,
+
+that value is equivalent to using the ``+`` operator.
+
 
 ::
->>>add_integer = __import__('0-add_integer.py').add_integer
->>>add_integer(2, 3)
-5
+
+
+    >>> add_integer = import('0-add_integer').add_integer
+
+    >>> add_integer(2, 3)
+
+    5
+
 
 ::
 
->>>add_integer(2, -3)
--1
+
+    >>> add_integer(2, -3)
+
+    -1
