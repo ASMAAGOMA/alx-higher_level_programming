@@ -1,10 +1,4 @@
-"""
-The "add integer"test module
-"""
-#test_cases
-test_cases = [
-#valid integer addition
-((1, 2), 3),
-#valid negative integer addition
-((100, -2), 98)
-]
+::
+>>>add_integer = __import__('0-add_integer.py').add_integer
+>>>add_integer(5, 6)
+11
