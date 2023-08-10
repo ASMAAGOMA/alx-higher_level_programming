@@ -38,7 +38,9 @@ that value is equivalent to using the ``+`` operator.
 
     -1
 
+
 Non numbers
+
 
 ===========
 
