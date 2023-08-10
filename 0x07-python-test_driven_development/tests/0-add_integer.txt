@@ -37,3 +37,24 @@ that value is equivalent to using the ``+`` operator.
     >>> add_integer(2, -3)
 
     -1
+
+Non numbers
+
+===========
+
+
+``add_integer()`` expects that both arguments are either integers or floats.
+
+If either argument is a non-integer and non-float, a TypeError is raised:
+
+
+::
+
+
+    >>>add_integer(2, school)
+    Traceback (most recent call last):
+     TypeError: b must be an integer
+
+
+::
+    
