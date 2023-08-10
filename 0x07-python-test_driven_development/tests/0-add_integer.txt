@@ -1,0 +1,4 @@
+#test_cases
+test_cases = [
+((1, 2), 3)
+]
