@@ -57,3 +57,24 @@ Note that floats are casted to ints before addition is performed.
 
     -2
 
+
+Floating and none_floating values are compiled
+
+
+::
+
+
+    >>> add_integer(2.3, -3)
+
+    -1
+
+
+The second argument is optional by default is 98
+
+
+::
+
+
+    >>> add_integer(2)
+
+    100
