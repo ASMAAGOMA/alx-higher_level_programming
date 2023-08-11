@@ -39,6 +39,17 @@ that value is equivalent to using the ``+`` operator.
     -1
 
 
+The function also works with floating-point values.
+
+
+::
+
+
+    >>> add_integer(2.0, 3.0)
+
+    5
+
+
 Note that floats are casted to ints before addition is performed.
 
 
@@ -58,7 +69,7 @@ Note that floats are casted to ints before addition is performed.
     -2
 
 
-Floating and none_floating values are compiled
+Floating and non-floating point values can be combined.
 
 
 ::
@@ -69,7 +80,7 @@ Floating and none_floating values are compiled
     -1
 
 
-The second argument is optional by default is 98
+The second argument is optional - by default, it is 98.
 
 
 ::
