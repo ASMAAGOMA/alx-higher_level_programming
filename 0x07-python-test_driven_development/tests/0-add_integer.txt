@@ -39,24 +39,13 @@ that value is equivalent to using the ``+`` operator.
     -1
 
 
-The function works with foating values.
+Note that floats are casted to ints before addition is performed.
 
 
 ::
 
 
-    >>>add_integer(2.0, 3.0)
-
-    5
-
-
-Floates casted into integer.
-
-
-::
-
-
-    >>>add_integer(2.9, 0.2)
+    >>> add_integer(2.9, 0.2)
 
     2
 
@@ -64,6 +53,7 @@ Floates casted into integer.
 ::
 
 
-    >>>add_integer(-2.9, -0.2)
+    >>> add_integer(-2.9, -0.2)
 
     -2
+
