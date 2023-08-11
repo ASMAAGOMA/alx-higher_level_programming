@@ -39,21 +39,31 @@ that value is equivalent to using the ``+`` operator.
     -1
 
 
-Non numbers
-
-===========
-
-
-``add_integer()` expects that both arguments are either integers or floats.
-
-If either argument is a non-integer and non-float, a TypeError is raised:
+The function works with foating values.
 
 
 ::
 
 
-    >>>add_integer(2, school)
+    >>>add_integer(2.0, 3.0)
 
-    Traceback (most recent call last):
+    5
 
-    TypeError: b must be an integer
+
+Floates casted into integer.
+
+
+::
+
+
+    >>>add_integer(2.9, 0.2)
+
+    2
+
+
+::
+
+
+    >>>add_integer(-2.9, -0.2)
+
+    -2
