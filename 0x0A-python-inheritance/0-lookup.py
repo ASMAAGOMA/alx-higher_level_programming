@@ -4,4 +4,7 @@
 
 
 def lookup(obj):
+
+    """Function to return the attributes"""
+
     return (dir(obj))
