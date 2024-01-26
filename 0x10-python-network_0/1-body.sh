@@ -1,3 +1,3 @@
 #!/bin/bash
-#displays the body of the response#
-curl https://curl.se/docs/httpscripting.html
+#displays the body of the respond#
+curl
