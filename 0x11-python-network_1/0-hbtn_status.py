@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""script that fetches https://alx-intranet.hbtn.io/sta"""
 import urllib.request
 with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
     body = response.read()
