@@ -1,6 +1,6 @@
 #!/usr/bin/node
-function sorting (args) {
-//get the numbers from line arguments and turn it into numeric values
+function sorts (args) {
+//  get the numbers from line arguments and turn it into numeric values
   const numbers = args.slice(2).map(Number);
   const sorted = numbers.sort((a, b) => b - a);
   if (sorted.length >= 2) {
@@ -9,4 +9,4 @@ function sorting (args) {
     return 0;
   }
 }
-console.log(sorting(process.argv));
+console.log(sorts(process.argv));
