@@ -8,7 +8,7 @@ class Square extends Hell {
   }
   charPrint (c) {
     for (let i = 0; i < this.height; i++) {
-      console.log(Array(this.width + 1).join('c || X'));
+      console.log(Array(this.width + 1).join(c || 'X'));
     }
   }
 }
