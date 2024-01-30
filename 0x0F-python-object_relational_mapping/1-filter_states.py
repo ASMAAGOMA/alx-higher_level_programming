@@ -11,5 +11,5 @@ if __name__ == "__main__":
                          password=password, db=name)
     curs = db.cursor()
     curs.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC;")
-    for row in curs.fetchall():
-        print(row)
+    for state in curs.fetchall():
+        print(state)
