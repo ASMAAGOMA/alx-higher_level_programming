@@ -11,14 +11,17 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", port=3306,
                          user=username, passwd=password, db=name)
     curs = db.cursor()
-    count = curs.execute(("SELECT cities.id, cities.name, states.name "
-                          "FROM cities "
-                          "INNER JOIN states ON cities.state_id = states.id "
-                          "WHERE states.name = %s "
-                          "ORDER BY cities.id ASC;"), (search,))
-    for state in curs.fetchall():
-        count -= 1
-        if (count == 0):
-            print(state[0], end='')
-        else:
-            print(state[0], end=', ')
+    curs.execute(("SELECT cities.id, cities.name, states.name "
+                  "FROM cities "
+                  "INNER JOIN states ON cities.state_id = states.id "
+                  "WHERE states.name = %s "
+                  "ORDER BY cities.id ASC;"), (search,))
+    results = curs.fetchall()
+    if results:
+        for index, state in enumerate(results):
+            if index == len(results) - 1:
+                print(state[0], end='')
+            else:
+                print(state[0], end=', ')
+    else:
+        print("No cities found for the state:", search)
