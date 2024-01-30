@@ -19,7 +19,7 @@ if __name__ == "__main__":
     for state in curs.fetchall():
         count -= 1
         if (count == 0):
-            print(state[0], end='')
+            print(state[1], end='')
         else:
-            print(state[0], end=', ')
+            print(state[1], end=', ')
     print()
