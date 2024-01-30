@@ -10,8 +10,9 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", port=3306,
                          password=password, db=name)
     curs = db.cursor()
-    curs.execute(("SELECT cities.id, cities.name, states.name"
-                  "FROM cities INNER JOIN states ON cities,state.id = state.id"
+    curs.execute(("SELECT cities.id, cities.name, states.name "
+                  "FROM cities "
+                  "INNER JOIN states ON cities.state.id = state.id "
                   " ORDER BY cities.id ASC;"))
-    for row in curs.fetchall():
+    for state in curs.fetchall():
         print(row)
