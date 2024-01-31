@@ -5,8 +5,7 @@ Define a class that maps to the 'states' table in the database.
 """
 
 import sys
-from sqlalchemy import Column, Integer, String, create_engine
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Baze, State
 
