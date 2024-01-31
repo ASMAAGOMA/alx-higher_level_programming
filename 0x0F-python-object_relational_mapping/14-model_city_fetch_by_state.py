@@ -7,7 +7,7 @@ A script that lists all states in the database.
 from model_city import Base, State, City
 
 
-if name == "main":
+if __name__ == "__main__":
     from sqlalchemy.orm import sessionmaker
     from sqlalchemy import create_engine
     import sys
