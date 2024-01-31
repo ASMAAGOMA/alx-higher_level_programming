@@ -1,17 +1,15 @@
 #!/usr/bin/python3
 
 """
-A script that lists all states in the database.
+Script to list all states in the database along with their cities.
 """
 
+import sys
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 from model_city import Base, State, City
 
-
 if __name__ == "__main__":
-    from sqlalchemy.orm import sessionmaker
-    from sqlalchemy import create_engine
-    import sys
-
     host, password, name = sys.argv[1:]
     uri = f"mysql+mysqldb://{host}:{password}@localhost/{name}"
     engine = create_engine(uri, pool_pre_ping=True)
