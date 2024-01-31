@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """
-Script to add a new state to the 'states' table in the database and print its ID.
+Script to add a new state to the 'states' table in
+the database and print its ID.
 """
 
 import sys
@@ -22,4 +23,4 @@ if __name__ == "__main__":
     session.add(new_state)
     session.commit()
 
-    print("New state ID:", new_state.id)
+    print(new_state.id)
