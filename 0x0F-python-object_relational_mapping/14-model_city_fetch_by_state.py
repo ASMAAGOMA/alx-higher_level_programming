@@ -5,7 +5,7 @@ Script to add a new state to the 'states' table in
 the database and print its ID.
 """
 
-from model_city import Base, State, City
+from model_city import Base, State
 
 
 if __name__ == "__main__":
