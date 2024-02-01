@@ -11,6 +11,7 @@ from model_state import State, Base
 
 Base = declarative_base()
 
+
 class City(Base):
     """
     Represents a city entity in the database.
@@ -18,9 +19,12 @@ class City(Base):
     Attributes:
         id (int): The primary key of the city.
         name (str): The name of the city.
-        state_id (int): The foreign key referencing the state the city belongs to.
-        state (State): The relationship to the State model representing the state the city belongs to.
+        state_id (int): The foreign key referencing
+        the state the city belongs to.
+        state (State): The relationship to the State
+        model representing the state the city belongs to.
     """
+    
     __tablename__ = "cities"
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
