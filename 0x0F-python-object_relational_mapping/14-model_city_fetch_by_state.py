@@ -8,7 +8,7 @@ the database and print its ID.
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from model_state import Base, State, City
+from model_state import City, Base, State
 
 
 if __name__ == "__main__":
