@@ -24,11 +24,12 @@ class City(Base):
         state (State): The relationship to the State
         model representing the state the city belongs to.
     """
-    
+
     __tablename__ = "cities"
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
     state_id = Column(Integer, ForeignKey("states.id"), nullable=False)
     state = relationship(State, back_populates="cities")
+
 
 State.cities = relationship(City, back_populates="state")
