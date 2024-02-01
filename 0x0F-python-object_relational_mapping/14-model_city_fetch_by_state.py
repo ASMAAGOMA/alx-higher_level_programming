@@ -1,3 +1,7 @@
+"""
+Script to list all states in the database along with their cities.
+"""
+
 #!/usr/bin/python3
 
 """
