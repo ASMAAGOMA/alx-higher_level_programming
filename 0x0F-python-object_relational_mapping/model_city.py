@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-State Model
+State Model: Defines the State model representing a state entity in the database.
 """
 
 from sqlalchemy.ext.declarative import declarative_base
