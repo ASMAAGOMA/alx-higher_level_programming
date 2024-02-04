@@ -20,6 +20,7 @@ if __name__ == "__main__":
     session = sessionmaker(bind=engine)()
     query = (
         session.query(State)
+        .options(joinedload(State.cities))
         .order_by(State.id)
     )
 
