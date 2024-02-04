@@ -19,9 +19,8 @@ if __name__ == "__main__":
 
     session = sessionmaker(bind=engine)()
     query = (
-        session.query(State)
-        .options(joinedload(State.cities))
-        .order_by(State.id)
+        session.query(State).join(City)
+        .order_by(State.id, City.id)
     )
 
     for state in query:
